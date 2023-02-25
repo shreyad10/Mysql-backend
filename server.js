@@ -71,7 +71,7 @@ app.post("/login", (req, res) => {
           }
           res.send(result);
         } else {
-          res.send({ msg: "Incorrect credentials" });
+          res.send({ msg: "Incorrect credentials " });
         }
       }
     }
@@ -104,7 +104,7 @@ app.post("/details", (req, res) => {
         console.log("result", result);
         res.send(result);
       } else {
-        res.send({ msg: "galt details" });
+        res.send({ msg: "Invalid details" });
       }
     }
   });
